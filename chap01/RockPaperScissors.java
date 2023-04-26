@@ -15,7 +15,7 @@ public class RockPaperScissors {
 
             System.out.print("숫자를 입력하세요 : ");
             user = sc.nextInt();
-            if(user > 3)
+            if((user > 3) || (user < 0))
             {
                 continue;
             }
@@ -31,16 +31,9 @@ public class RockPaperScissors {
 
                 System.out.print("결과 : ");
                 switch (user - cum) {
-                    case -2:
-                    case 1:
-                        System.out.println("승");
-                        break;
-                    case -1:
-                    case 2:
-                        System.out.println("패");
-                        break;
-                    case 0:
-                        System.out.println("비김");
+                    case -2, 1 -> System.out.println("승");
+                    case -1, 2 -> System.out.println("패");
+                    case 0 -> System.out.println("비김");
                 }
             }
         }

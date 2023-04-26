@@ -11,7 +11,7 @@ public class Main {
                     .age(userAges[i])
                     .build();
 
-                    System.out.print(userInfo.toString());
+            System.out.print(userInfo.toString());
         }
     }
 }

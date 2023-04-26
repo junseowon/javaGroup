@@ -4,13 +4,10 @@ import java.util.Scanner;
 
 public class Pyramid {
     public static void main(String[] args) throws Exception{
-        Scanner sc = new Scanner(System.in);
-        System.out.print("피라미드 층을 입력하세요 : ");
-        int num = sc.nextInt();
 
-        for(int i = 0; i < num; i++)
+        for(int i = 0; i < 5; i++)
         {
-            for(int j = 1; j < num - i; j++)
+            for(int j = 1; j < 5 - i; j++)
             {
                 System.out.print(" ");
             }

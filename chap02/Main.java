@@ -42,7 +42,7 @@ public class Main {
 
             for (FriendsInfo friendsInfo : friendsArray) {
                 if (inputName.equals(friendsInfo.getName())) {
-                    System.out.println(friendsInfo.toString());
+                    System.out.println(friendsInfo);
                     System.out.println();
                     break;
                 }

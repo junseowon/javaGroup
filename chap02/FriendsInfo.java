@@ -1,12 +1,9 @@
 package chap02;
 
 public class FriendsInfo {
-    private String name;
-    private int age;
-    private String phoneNumber;
-
-    public FriendsInfo() {
-    }
+    private final String name;
+    private final int age;
+    private final String phoneNumber;
 
     public FriendsInfo(String name, int age, String phoneNumber) {
         this.name = name;

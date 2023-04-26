@@ -1,20 +1,17 @@
 package chap01;
 
 import java.util.Scanner;
-import java.util.Random;
 
 public class Prophet {
     public static void main(String[] args) throws Exception{
         Scanner sc = new Scanner(System.in);
-        Random random = new Random();
 
-        int getNum = 0;
+        int getNum;
         int num = 0;
-        int cum = 0;
 
-        cum = random.nextInt(5) + 1;
+        int cum = (int)(Math.random() * 5) + 1;
 
-        System.out.println("컴퓨터는 1 ~ 5사이에 수를 생각합니다! " + cum + "생각 중...");
+        System.out.println("컴퓨터는 1 ~ 5사이에 수를 생각합니다! ");
 
         while(true)
         {
@@ -30,7 +27,6 @@ public class Prophet {
             if((getNum > 5) || (getNum < 1))
             {
                 System.out.println("컴퓨터는 1 ~ 5사이에 수를 생각합니다!");
-                continue;
             }
         }
     }

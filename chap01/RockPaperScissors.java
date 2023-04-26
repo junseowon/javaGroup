@@ -1,14 +1,13 @@
 package chap01;
 
-import javax.swing.text.Style;
 import java.util.*;
 
 public class RockPaperScissors {
     public static void main(String[] args) throws Exception{
         Scanner sc = new Scanner(System.in);
 
-        int user = 0;
-        int cum = 0;
+        int user;
+        int cum;
 
         while(true) {
             System.out.println("[가위(1), 바위(2), 보(3), 종료(0)]");

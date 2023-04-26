@@ -2,7 +2,7 @@ package chap01;
 
 import java.util.Scanner;
 
-public class Score01 {
+public class Score {
     public static void main(String[] args) throws Exception{
         Scanner sc = new Scanner(System.in);
 
